@@ -24,7 +24,7 @@ localhost:5000/api/v1/users
 
 localhost:5000/api/v1/users/id
 
-#### Delete post
+#### Delete user
 
 localhost:5000/api/v1/users/id
 
