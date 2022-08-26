@@ -1,4 +1,4 @@
-# blog-post
+# blog-post-server
 
 ## Project setup
 
