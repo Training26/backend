@@ -59,11 +59,11 @@ exports.createPost = async (req, res, _next) => {
         return res
           .status(400)
           .json({ success: false, message: "please add a content" });
-      if (req.files[0] === undefined)
+      if (!req.file)
         return res
           .status(400)
           .json({ success: false, message: "please add an image" });
-      const image = req.files[0].filename;
+      const image = req.file.filename;
       const post = await Posts.create({
         title,
         userId,

@@ -5,7 +5,9 @@ const { Messages } = require("../models");
 // @access  Public
 exports.getMessages = async (_req, res, _next) => {
   try {
-    const messages = await Messages.findAll();
+    const messages = await Messages.findAll({
+      include: ["user"],
+    });
     if (!messages)
       return res
         .status(404)

@@ -2,7 +2,11 @@ const sequelize = require("../config/env.js");
 const Sequelize = require("sequelize");
 const Model = Sequelize.Model;
 
-class Users extends Model {}
+class Users extends Model {
+  toJSON() {
+    return { ...this.get(), password: undefined };
+  }
+}
 Users.init(
   {
     id: {
