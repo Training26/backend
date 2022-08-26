@@ -6,52 +6,88 @@
 npm install
 ```
 
-### Run The Server
+## Run The Server
 
 ```
 node index.js
 ```
 
-### Routes Docs
+## Routes Docs
 
-### Users Route
+## Users Route
 
-#### Get Users
+### Get Users
 
-localhost:5000/api/v1/users
+```
+GET http://localhost:5000/api/v1/users
+```
 
-#### Get User
+### Get User
 
-localhost:5000/api/v1/users/id
+```
+GET http://localhost:5000/api/v1/users/id
+```
 
-#### Delete user
+### Create User
 
-localhost:5000/api/v1/users/id
+```
+POST http://localhost:5000/api/v1/users
+```
 
-### Post Route
+### Delete user
 
-#### Get Posts
+```
+DELETE http://localhost:5000/api/v1/users/id
+```
 
-localhost:5000/api/v1/posts
+## Posts Route
 
-#### Get post
+### Get Posts
 
-localhost:5000/api/v1/post/id
+```
+GET http://localhost:5000/api/v1/posts
+```
 
-#### Delete post
+### Get post
 
-localhost:5000/api/v1/post/id
+```
+GET http://localhost:5000/api/v1/posts/id
+```
 
-### Messages Route
+### Create post
 
-#### Get messages
+```
+POST http://localhost:5000/api/v1/posts
+```
 
-localhost:5000/api/v1/messages
+### Delete post
 
-#### Get message
+```
+DELETE http://localhost:5000/api/v1/post/id
+```
 
-localhost:5000/api/v1/message/id
+## Messages Route
 
-#### Delete message
+### Get messages
 
-localhost:5000/api/v1/message/id
+```
+GET http://localhost:5000/api/v1/messages
+```
+
+### Get message
+
+```
+GET http://localhost:5000/api/v1/messages/id
+```
+
+### Create message
+
+```
+POST http://localhost:5000/api/v1/messages
+```
+
+### Delete message
+
+```
+DELETE http://localhost:5000/api/v1/messages/id
+```
