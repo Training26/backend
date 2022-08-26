@@ -44,14 +44,14 @@ localhost:5000/api/v1/post/id
 
 ### Messages Route
 
-#### Get Posts
+#### Get messages
 
 localhost:5000/api/v1/messages
 
-#### Get post
+#### Get message
 
 localhost:5000/api/v1/message/id
 
-#### Delete post
+#### Delete message
 
 localhost:5000/api/v1/message/id
