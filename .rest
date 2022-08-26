@@ -1,0 +1,29 @@
+POST http://localhost:5000/api/v1/users HTTP/1.1
+content-type: application/json
+
+{
+    "name": "user1",
+    "email": "user1@gmail.com",
+    "password": "1"
+}
+
+###
+POST http://localhost:5000/api/v1/messages HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "1",
+    "message": "this is a test message"
+}
+
+###
+
+GET http://localhost:5000/api/v1/messages HTTP/1.1
+###
+GET http://localhost:5000/api/v1/messages/1 HTTP/1.1
+
+###
+GET http://localhost:5000/api/v1/users HTTP/1.1
+
+###
+GET http://localhost:5000/api/v1/users/1 HTTP/1.1
